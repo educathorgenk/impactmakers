@@ -18,6 +18,7 @@ Voeg een ``||logic:als, anders||`` blok toe in de ``||basic: de hele tijd||``.
 Plaats een ``||logic:0 = 0||``  blok in de``||logic:als, anders||`` blok
 Gebruik de ``||pins: Lees digitaal pin||`` blok in het eerste gedeelte van de vergelijking.
 Vergelijk nu of deze gelijk is aan 1.
+
 ```blocks
 basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P1) == 1) {
