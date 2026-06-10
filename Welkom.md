@@ -2,7 +2,7 @@
 
 ## Introductie @showdialog
 In deze tutorial leer je hoe je een welkomstbericht toont op de micro:bit wanneer je op een drukknop drukt die verbonden is met pin P1.
-Gebruik het lamp-icoontje om tips te krijgen over de code blokken in de toturial.
+Gebruik het lamp-icoontje om tips te krijgen over de code blokken in de tutorial.
 
 ## Stap 1: sluit de drukknop aan
 Gebruik de kabels op tafel en verbind je drukknop:
