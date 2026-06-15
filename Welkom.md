@@ -40,9 +40,7 @@ basic.forever(function () {
     }
 })
 ```
-
 👉 De tekst verschijnt nu wanneer je op de knop drukt
-
 
 ## Step 4: test je programma
 Druk op de knop en kijk wat er gebeurt:
