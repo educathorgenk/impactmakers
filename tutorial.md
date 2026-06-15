@@ -136,7 +136,7 @@ basic.forever(function () {
 ## Stap 6: Maak een lichtshow
 
 Laat de kleuren nu na elkaar verschijnen.
-Gebruik tussen elke kleur het blok ||basic:pauzeer (ms)||.
+Gebruik tussen elke kleur het blok ``||basic:pauzeer (ms)||``.
 Zo blijft elke kleur even zichtbaar.
 
 ```blocks
