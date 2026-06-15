@@ -7,11 +7,9 @@ Jullie zorgen voor:
 - de **verlichting (RGB)**  
 - de **rookmachine (ventilator)**  
 
-Met de **micro:bit** bouwen jullie zelf de techniek achter het podium.  
 Stap voor stap maken jullie een echte festivalervaring! 🎪✨
 
 *Gebruik zeker de hints als je vastzit.*
-![hint](/static/hint.png)
 
 ## Stap 1: sluit de drukknop aan
 Gebruik de kabels op tafel en verbind je drukknop:
@@ -20,12 +18,12 @@ Gebruik de kabels op tafel en verbind je drukknop:
 - Verbind het **andere uiteinde** van de kabel met **DK**
 
 ## Stap 2: gebruik pinnen
-We gaan controleren of er op pin P1 wordt gedrukt.
+We gaan controleren of de drukknop wordt gedrukt.
 
 Voeg een ``||logic:als, anders||`` blok toe in de ``||basic: de hele tijd||``.
-Plaats een ``||logic:0 = 0||``  blok in de ``||logic:als, anders||`` blok
+Plaats een ``||logic:0 = 0||``  blok in de ``||logic:als, anders||`` blok.
 Gebruik de ``||pins: Lees digitaal pin||`` blok in het eerste gedeelte van de vergelijking.
-Vergelijk nu of deze gelijk is aan 1.
+Vergelijk nu de waarde van **pin P1** of deze gelijk is aan **1**.
 
 ```blocks
 basic.forever(function () {
@@ -36,12 +34,13 @@ basic.forever(function () {
 })
 ```
 ## Step 3:Toon tekst bij indrukken
-Voeg een ``||basic: toon tekens||`` blok toe in het eerste gedeelte van de ``||logic:als, anders||`` blok.
-Schrijf een leuke boodschap voor de festivalbezoekers. Voeg een ``||basic: wis scherm||`` toe in het anders-gedeelte.
+Voeg een ``||basic: toon tekens||`` blok toe in het **"als"-gedeelte** van de ``||logic:als, anders||`` blok.
+**Schrijf een leuke boodschap voor de festivalbezoekers.** Voeg een ``||basic: wis scherm||`` toe in het **"anders"-gedeelte**.
 
 ```blocks
 basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P1) == 1) {
+    // @highlight
         basic.showString("Hallo!")
     }else{
      basic.clearScreen()
@@ -49,8 +48,10 @@ basic.forever(function () {
 })
 ```
 ## Step 4: download naar de micro:bit
-Sluit je micro:bit aan en klik op **Download** linksonderaan.  
-Druk op de knop en kijk wat er gebeurt.
+Klik op **Download**-knop linksonderaan.  
+Druk op de drukknop en kijk wat er gebeurt.
+
+
 
 
 ```validation.global
