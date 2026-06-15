@@ -8,6 +8,7 @@ Jullie zorgen voor:
 - de **rookmachine (ventilator)**  
 
 Stap voor stap maken jullie een echte festivalervaring! 🎪✨
+
 *Gebruik zeker de hints als je vastzit.*
 
 ## Stap 1: sluit de drukknop aan
