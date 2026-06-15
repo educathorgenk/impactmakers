@@ -34,3 +34,19 @@ basic.forever(function () {
     }else{}
 })
 ```
+## Step 3:Toon tekst bij indrukken
+Voeg een ``||basic: toon tekens||`` blok toe in het eerste gedeelte van de ``||logic:als, anders||`` blok.
+Schrijf een leuke boodschap voor de festivalbezoekers. Voeg een ``||basic: wis scherm||`` toe in het anders-gedeelte.
+
+```blocks
+basic.forever(function () {
+    if (pins.digitalReadPin(DigitalPin.P1) == 1) {
+        basic.showString("Hallo!")
+    }else{
+     basic.clearScreen()
+    }
+})
+```
+## Step 4: download naar de micro:bit
+Sluit je micro:bit aan en klik op **Download** linksonderaan.  
+Druk op de knop en kijk wat er gebeurt.
