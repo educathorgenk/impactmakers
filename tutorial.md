@@ -11,7 +11,7 @@ Met de **micro:bit** bouwen jullie zelf de techniek achter het podium.
 Stap voor stap maken jullie een echte festivalervaring! 🎪✨
 
 *Gebruik zeker de hints als je vastzit.*
-![hints-icoon](/impactmakers/static/hint.png)
+![hints-icoon](/static/hint.png)
 
 ## Stap 1: sluit de drukknop aan
 Gebruik de kabels op tafel en verbind je drukknop:
