@@ -29,6 +29,7 @@ Vergelijk nu of deze gelijk is aan 1.
 
 ```blocks
 basic.forever(function () {
+// @highlight
     if (pins.digitalReadPin(DigitalPin.P1) == 1) {
        
     }else{}
@@ -50,3 +51,8 @@ basic.forever(function () {
 ## Step 4: download naar de micro:bit
 Sluit je micro:bit aan en klik op **Download** linksonderaan.  
 Druk op de knop en kijk wat er gebeurt.
+
+
+```validation.global
+# BlocksExistValidator
+```
