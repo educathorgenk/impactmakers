@@ -11,7 +11,8 @@
         "main.ts",
         "README.md",
         "Welkom.md",
-        "tutorial.md"
+        "tutorial.md",
+        "test-tutorial.md"
     ],
     "testFiles": [
         "test.ts"
