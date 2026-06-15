@@ -51,41 +51,49 @@ basic.forever(function () {
 Klik op **Download**-knop linksonderaan.  
 Druk op de drukknop en kijk wat er gebeurt.
 
-## Goed gedaan @showdialog
+## Goed gedaan! @showdialog
 
-### sfeerverlichting
-In deze opdracht leer je hoe je een RGB-LED kan aansturen met de micro:bit.
-Je laat de LED van kleur veranderen: rood → blauw → groen.
-Zo ontdek je hoe je met code verschillende kleuren kan maken. 🌈
+### Sfeerverlichting
+
+In deze opdracht stuur je een **RGB LED** aan met de **micro:bit**.  
+Je laat de LED wisselen tussen **rood**, **groen** en **blauw**. 🌈
 
 ## Stap 1: Sluit de kabels aan
 
-Verbind de kabels correct:
+Verbind de kabels op de juiste plaats:
 
 - **R** gaat naar **P2**
 - **G** gaat naar **P8**
 - **B** gaat naar **P12**
 
+Controleer goed of elke kabel juist zit.
+
 ## Stap 2: Wat heb je aangesloten?
 
 Je hebt een **RGB LED** aangesloten.
-Een RGB LED is een lampje met drie kleuren:
+
+Een RGB LED heeft drie kleuren:
 
 - **R** = rood
 - **G** = groen
 - **B** = blauw
 
+Door de juiste pinnen aan (hoog) en uit (laag) te zetten, kies je de kleur.
+
 ## Stap 3: Programmeer rood licht
 
-Gebruik de blokken uit ``||pins: schrijf digitaal pin [P0]||``:
+Gebruik de blok `||pins:schrijf digitaal pin [P0] naar [0]||`. Voeg deze voor elke pin toe aan de ``||basic: de hele tijd||`` blok.
 
-- schrijf digitaal pin **P2** naar **0**
-- schrijf digitaal pin **P8** naar **1**
-- schrijf digitaal pin **P12** naar **1**
+Stel de pinnen zo in:
 
-Download het programma
+- **P2** naar **0**
+- **P8** naar **1**
+- **P12** naar **1**
+
+Download het programma naar je micro:bit.
 
 ```blocks
+   // @highlight
 basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P2, 0)
     pins.digitalWritePin(DigitalPin.P8, 1)
@@ -94,14 +102,13 @@ basic.forever(function () {
 ```
 
 ## Stap 4: Programmeer groen licht
+Pas de waarden aan:
 
-Gebruik de blokken uit ``||pins: schrijf digitaal pin [P0]||``:
+- **P2** naar **1**
+- **P8** naar **0**
+- **P12** naar **1**
 
-- schrijf digitaal pin **P2** naar **1**
-- schrijf digitaal pin **P8** naar **0**
-- schrijf digitaal pin **P12** naar **1**
-
-Download het programma
+Download het programma naar je micro:bit.
 
 ```blocks
 basic.forever(function () {
@@ -110,16 +117,14 @@ basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P12, 1)
 })
 ```
-
 ## Stap 5: Programmeer blauw licht
+Pas de waarden aan:
 
-Gebruik de blokken uit ``||pins: schrijf digitaal pin [P0]||``:
+- **P2** naar **1**
+- **P8** naar **1**
+- **P12** naar **0**
 
-- schrijf digitaal pin **P2** naar **1**
-- schrijf digitaal pin **P8** naar **1**
-- schrijf digitaal pin **P12** naar **0**
-
-Download het programma
+Download het programma naar je micro:bit.
 
 ```blocks
 basic.forever(function () {
@@ -128,34 +133,31 @@ basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P12, 0)
 })
 ```
-
 ## Stap 6: Maak een lichtshow
 
-Laat nu meerdere kleuren na elkaar verschijnen.  
-
-Gebruik telkens een blok `||basic:pauzeer (ms)||` tussen twee kleuren.
-Zo krijgt je podiumlicht tijd om van kleur te veranderen.
-
-🎬 Test je programma.  
-Je RGB LED maakt nu een kleine lichtshow.
+Laat de kleuren nu na elkaar verschijnen.
+Gebruik tussen elke kleur het blok ||basic:pauzeer (ms)||.
+Zo blijft elke kleur even zichtbaar.
 
 ```blocks
-// @highlight
 basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P2, 0)
     pins.digitalWritePin(DigitalPin.P8, 1)
     pins.digitalWritePin(DigitalPin.P12, 1)
     basic.pause(500)
+
     pins.digitalWritePin(DigitalPin.P2, 1)
     pins.digitalWritePin(DigitalPin.P8, 0)
     pins.digitalWritePin(DigitalPin.P12, 1)
     basic.pause(500)
+
     pins.digitalWritePin(DigitalPin.P2, 1)
     pins.digitalWritePin(DigitalPin.P8, 1)
     pins.digitalWritePin(DigitalPin.P12, 0)
     basic.pause(500)
 })
 ```
+
 
 ```validation.global
 # BlocksExistValidator
