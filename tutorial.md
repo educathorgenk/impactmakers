@@ -10,7 +10,7 @@ Jullie zorgen voor:
 Stap voor stap maken jullie een echte festivalervaring! 🎪✨
 Gebruik zeker de hints als je vastzit.
 
-*16-06-26*
+*16-06-26, V1.3.1*
 
 ## Stap 1: sluit de drukknop aan
 Gebruik de kabels op tafel en verbind je drukknop:
