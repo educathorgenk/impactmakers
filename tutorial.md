@@ -8,8 +8,9 @@ Jullie zorgen voor:
 - de **rookmachine (ventilator)**  
 
 Stap voor stap maken jullie een echte festivalervaring! 🎪✨
+Gebruik zeker de hints als je vastzit.
 
-*Gebruik zeker de hints als je vastzit.*
+*16-06-26*
 
 ## Stap 1: sluit de drukknop aan
 Gebruik de kabels op tafel en verbind je drukknop:
@@ -22,8 +23,8 @@ We gaan controleren of de drukknop wordt gedrukt.
 
 Voeg een ``||logic:als <waar> dan, anders||`` blok toe in de ``||basic: de hele tijd||``.
 Plaats een ``||logic:<0 = 0>||``  blok in het ``||logic:<waar>||`` gedeelte van de ``||logic:als <waar> dan, anders||`` blok.
-Gebruik de ``||pins: Lees digitaal pin [P0]||`` blok in het eerste gedeelte van de ``||logic:<0 = 0>||`` vergelijking.
-Vergelijk nu de waarde van ``||pins: Lees digitaal pin [P1]||`` blok of deze gelijk is aan **1**.
+Gebruik de ``||pins: Lees digitaal pin [P0]||`` blok in het eerste gedeelte van de ``||logic:<0 = 0>||``-vergelijking.
+Vergelijk nu de waarde van **pin P1** of deze gelijk is aan **1**.
 
 ```blocks
 basic.forever(function () {
@@ -48,7 +49,7 @@ basic.forever(function () {
 })
 ```
 ## Stap 4: download naar de micro:bit
-Klik op **Download**-knop linksonderaan.  
+Klik op de **Download**-knop linksonderaan.  
 Druk op de drukknop en kijk wat er gebeurt.
 
 ## Goed gedaan! @showdialog
@@ -56,15 +57,15 @@ Druk op de drukknop en kijk wat er gebeurt.
 ### Sfeerverlichting
 
 In deze opdracht stuur je een **RGB LED** aan met de **micro:bit**.  
-Je laat de LED wisselen tussen **rood**, **groen** en **blauw**. 🌈
+Je laat de LED wisselen tussen 🔴 **rood**, 🟢 **groen** en 🔵 **blauw**.
 
 ## Stap 1: Sluit de kabels aan
 
 Verbind de kabels op de juiste plaats:
 
-- **R** gaat naar **P2**
-- **G** gaat naar **P8**
-- **B** gaat naar **P12**
+- 🔴 **R** gaat naar **P2**
+- 🟢 **G** gaat naar **P8**
+- 🔵 **B** gaat naar **P12**
 
 Controleer goed of elke kabel juist zit.
 
@@ -80,15 +81,15 @@ Een RGB LED heeft drie kleuren:
 
 Door de juiste pinnen aan (hoog) en uit (laag) te zetten, kies je de kleur.
 
-## Stap 3: Programmeer rood licht
+## Stap 3: Programmeer 🔴 rood licht
 
-Gebruik de blok `||pins:schrijf digitaal pin [P0] naar [0]||`. Voeg deze voor elke pin toe aan de ``||basic: de hele tijd||`` blok.
+Gebruik de blok `||pins:schrijf digitaal pin [P0] naar [0]||`. Voeg deze voor **elke pin** toe aan de ``||basic: de hele tijd||`` blok.
 
 Stel de pinnen zo in:
 
-- **P2** naar **0**
-- **P8** naar **1**
-- **P12** naar **1**
+- 🔴 **P2** naar **0**
+- 🟢 **P8** naar **1**
+- 🔵 **P12** naar **1**
 
 Download het programma naar je micro:bit.
 
@@ -101,12 +102,12 @@ basic.forever(function () {
 })
 ```
 
-## Stap 4: Programmeer groen licht
-Pas de waarden aan:
+## Stap 4: Programmeer 🟢 groen licht
+Pas de waarden aan zodat het licht 🟢 groen is:
 
-- **P2** naar **1**
-- **P8** naar **0**
-- **P12** naar **1**
+- 🔴 **P2** naar **1**
+- 🟢 **P8** naar **0**
+- 🔵 **P12** naar **1**
 
 Download het programma naar je micro:bit.
 
@@ -117,12 +118,12 @@ basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P12, 1)
 })
 ```
-## Stap 5: Programmeer blauw licht
-Pas de waarden aan:
+## Stap 5: Programmeer 🔵 blauw licht
+Pas de waarden aan zodat het licht 🔵 blauw is:
 
-- **P2** naar **1**
-- **P8** naar **1**
-- **P12** naar **0**
+- 🔴 **P2** naar **1**
+- 🟢 **P8** naar **1**
+- 🔵 **P12** naar **0**
 
 Download het programma naar je micro:bit.
 
@@ -135,8 +136,8 @@ basic.forever(function () {
 ```
 ## Stap 6: Maak een lichtshow
 
-Laat de kleuren nu na elkaar verschijnen.
-Gebruik tussen elke kleur het blok ``||basic:pauzeer (ms)||``.
+Laat de kleuren nu na elkaar verschijnen 🔴🟢🔵.
+Gebruik tussen elke kleur een ``||basic:pauzeer (ms)||``-blok.
 Zo blijft elke kleur even zichtbaar.
 
 ```blocks
@@ -157,6 +158,11 @@ basic.forever(function () {
     basic.pause(500)
 })
 ```
+
+## Goed gedaan! @showdialog
+
+### Rookmachine
+
 
 
 ```validation.global
