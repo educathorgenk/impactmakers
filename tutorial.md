@@ -10,7 +10,7 @@ Jullie zorgen voor:
 Stap voor stap maken jullie een echte festivalervaring! 🎪✨
 Gebruik zeker de hints als je vastzit.
 
-*16-06-26, V2.0.0*
+*16-06-26, V2.0.1*
 
 ## Stap 1: Sluit de drukknop aan
 Gebruik de kabels op tafel en verbind je drukknop:
@@ -195,19 +195,16 @@ basic.forever(function () {
 ```
 
 ## Stap 4: Ventilator aan of uit
-### ALS knop ingedrukt (P1 = 1)
+
+#### ALS knop ingedrukt (P1 = 1)
 - zet **P0** naar **1** *(hint: ``||pins:schrijf digitaal pin||``)*
 
-👉 Ventilator **aan**
-
-### ANDERS
+#### ANDERS
 - zet **P0** naar **0**  
 
-👉 Ventilator **uit**
-
 ```blocks
-basic.forever(function () {
 // @highlight
+basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P1) == 1) {
         pins.digitalWritePin(DigitalPin.P0, 1)
     } else {
